@@ -1,0 +1,140 @@
+{
+  "warehouses": {
+    "WH001": {
+      "id": "WH001",
+      "name": "Склад Минск",
+      "location": "Минск",
+      "capacity": 10000,
+      "current_load": 5000.0
+    },
+    "WH002": {
+      "id": "WH002",
+      "name": "Склад Витебск",
+      "location": "Витебск",
+      "capacity": 8000,
+      "current_load": 0.0
+    },
+    "WH003": {
+      "id": "WH003",
+      "name": "Склад Брест",
+      "location": "Брест",
+      "capacity": 12000,
+      "current_load": 0.0
+    },
+    "WH004": {
+      "id": "WH004",
+      "name": "Склад Гомель",
+      "location": "Гомель",
+      "capacity": 15000,
+      "current_load": 0.0
+    }
+  },
+  "transports": {
+    "TR001": {
+      "type": "Truck",
+      "id": "TR001",
+      "name": "Грузовик 1",
+      "capacity": 50,
+      "max_weight": 20000,
+      "speed": 80,
+      "cost_per_km": 50,
+      "range_limit": null
+    },
+    "TR002": {
+      "type": "Truck",
+      "id": "TR002",
+      "name": "Грузовик 2",
+      "capacity": 40,
+      "max_weight": 18000,
+      "speed": 90,
+      "cost_per_km": 55,
+      "range_limit": null
+    },
+    "SH001": {
+      "type": "Ship",
+      "id": "SH001",
+      "name": "Корабль",
+      "capacity": 1000,
+      "max_weight": 500000,
+      "speed": 25,
+      "cost_per_km": 20,
+      "range_limit": null
+    },
+    "TN001": {
+      "type": "Train",
+      "id": "TN001",
+      "name": "Поезд",
+      "capacity": 300,
+      "max_weight": 200000,
+      "speed": 60,
+      "cost_per_km": 30,
+      "range_limit": null
+    },
+    "AP001": {
+      "type": "Airplane",
+      "id": "AP001",
+      "name": "Самолет",
+      "capacity": 120,
+      "max_weight": 100000,
+      "speed": 900,
+      "cost_per_km": 1000,
+      "range_limit": 15000
+    }
+  },
+  "cargos": {
+    "C001": {
+      "id": "C001",
+      "name": "Электроника",
+      "weight": 5000,
+      "volume": 50,
+      "fragile": true,
+      "hazardous": false
+    },
+    "C002": {
+      "id": "C002",
+      "name": "Мебель",
+      "weight": 15000,
+      "volume": 200,
+      "fragile": true,
+      "hazardous": false
+    },
+    "C003": {
+      "id": "C003",
+      "name": "Химикаты",
+      "weight": 8000,
+      "volume": 100,
+      "fragile": false,
+      "hazardous": true
+    },
+    "C004": {
+      "id": "C004",
+      "name": "Продукты",
+      "weight": 3000,
+      "volume": 30,
+      "fragile": true,
+      "hazardous": false
+    }
+  },
+  "routes": [
+    {
+      "from_warehouse_id": "WH001",
+      "to_warehouse_id": "WH002",
+      "distance": 700
+    },
+    {
+      "from_warehouse_id": "WH001",
+      "to_warehouse_id": "WH003",
+      "distance": 1200
+    },
+    {
+      "from_warehouse_id": "WH002",
+      "to_warehouse_id": "WH004",
+      "distance": 500
+    },
+    {
+      "from_warehouse_id": "WH003",
+      "to_warehouse_id": "WH004",
+      "distance": 800
+    }
+  ]
+}
